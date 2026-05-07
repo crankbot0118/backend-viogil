@@ -117,6 +117,8 @@ def execute_pre_health_check(request: HealthCheckRequest):
 
         output = stdout.read().decode()
 
+        print(output)
+
         error = stderr.read().decode()
 
         ssh.close()
